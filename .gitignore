@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Production
+build/
+dist/
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Misc
+*.tsbuildinfo
+.eslintcache
+
+# iOS
+ios/RollWithIt.xcodeproj/project.xcworkspace/xcuserdata/
+ios/RollWithIt.xcodeproj/xcuserdata/
+ios/build/
+ios/DerivedData/
+*.xcuserstate
+
+# Supabase
+supabase/

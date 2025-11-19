@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Dungeons & Dragons 5th Edition",
+    "short_name": "5e",
+    "description": "The fifth edition of the world's greatest roleplaying game",
+    "version": "2014",
+    "is_official": true
+  },
+  {
+    "name": "Dungeons & Dragons 5th Edition (2024)",
+    "short_name": "5e-2024",
+    "description": "The 2024 revised edition of D&D 5th Edition",
+    "version": "2024",
+    "is_official": true
+  }
+]

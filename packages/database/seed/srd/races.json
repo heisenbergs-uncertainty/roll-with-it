@@ -1,0 +1,130 @@
+[
+  {
+    "source_abbreviation": "SRD",
+    "name": "Human",
+    "description": "Humans are the most adaptable and ambitious people among the common races. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.",
+    "size": "Medium",
+    "speed": 30,
+    "ability_score_increases": {
+      "str": 1,
+      "dex": 1,
+      "con": 1,
+      "int": 1,
+      "wis": 1,
+      "cha": 1
+    },
+    "traits": [
+      {
+        "name": "Extra Language",
+        "description": "You can speak, read, and write one extra language of your choice."
+      }
+    ],
+    "languages": ["Common"],
+    "is_homebrew": false
+  },
+  {
+    "source_abbreviation": "SRD",
+    "name": "Elf",
+    "description": "Elves are a magical people of otherworldly grace, living in the world but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light.",
+    "size": "Medium",
+    "speed": 30,
+    "ability_score_increases": {
+      "dex": 2
+    },
+    "traits": [
+      {
+        "name": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light."
+      },
+      {
+        "name": "Keen Senses",
+        "description": "You have proficiency in the Perception skill."
+      },
+      {
+        "name": "Fey Ancestry",
+        "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+      },
+      {
+        "name": "Trance",
+        "description": "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day."
+      }
+    ],
+    "languages": ["Common", "Elvish"],
+    "subraces": [
+      {
+        "name": "High Elf",
+        "description": "High elves have a keen mind and a mastery of at least the basics of magic.",
+        "ability_score_increases": {
+          "int": 1
+        },
+        "traits": [
+          {
+            "name": "Elf Weapon Training",
+            "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+          },
+          {
+            "name": "Cantrip",
+            "description": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."
+          }
+        ]
+      }
+    ],
+    "is_homebrew": false
+  },
+  {
+    "source_abbreviation": "SRD",
+    "name": "Dwarf",
+    "description": "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Though they stand well under 5 feet tall, dwarves are so broad and compact that they can weigh as much as a human.",
+    "size": "Medium",
+    "speed": 25,
+    "ability_score_increases": {
+      "con": 2
+    },
+    "traits": [
+      {
+        "name": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light."
+      },
+      {
+        "name": "Dwarven Resilience",
+        "description": "You have advantage on saving throws against poison, and you have resistance against poison damage."
+      },
+      {
+        "name": "Dwarven Combat Training",
+        "description": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer."
+      },
+      {
+        "name": "Stonecunning",
+        "description": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient and add double your proficiency bonus."
+      }
+    ],
+    "languages": ["Common", "Dwarvish"],
+    "is_homebrew": false
+  },
+  {
+    "source_abbreviation": "SRD",
+    "name": "Halfling",
+    "description": "The diminutive halflings survive in a world full of larger creatures by avoiding notice or, barring that, avoiding offense. They are inclined to be affable and get along well with others.",
+    "size": "Small",
+    "speed": 25,
+    "ability_score_increases": {
+      "dex": 2
+    },
+    "traits": [
+      {
+        "name": "Lucky",
+        "description": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+      },
+      {
+        "name": "Brave",
+        "description": "You have advantage on saving throws against being frightened."
+      },
+      {
+        "name": "Halfling Nimbleness",
+        "description": "You can move through the space of any creature that is of a size larger than yours."
+      }
+    ],
+    "languages": ["Common", "Halfling"],
+    "is_homebrew": false
+  }
+]

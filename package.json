@@ -1,0 +1,44 @@
+{
+  "name": "roll-with-it",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Multi-platform D&D management application",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "dev:web": "pnpm --filter web dev",
+    "build": "pnpm -r build",
+    "build:web": "pnpm --filter web build",
+    "preview:web": "pnpm --filter web preview",
+    "lint": "pnpm -r lint",
+    "type-check": "pnpm -r type-check",
+    "clean": "pnpm -r clean && rm -rf node_modules",
+    "db:start": "supabase start",
+    "db:stop": "supabase stop",
+    "db:reset": "supabase db reset",
+    "db:migrate": "supabase migration up",
+    "db:studio": "supabase studio",
+    "db:status": "supabase status"
+  },
+  "keywords": [
+    "dnd",
+    "dungeons-and-dragons",
+    "character-sheet",
+    "campaign-management",
+    "react",
+    "swift"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad"
+}

@@ -1,0 +1,141 @@
+[
+  {
+    "source_abbreviation": "SRD",
+    "name": "Fighter",
+    "description": "A master of martial combat, skilled with a variety of weapons and armor.",
+    "hit_die": 10,
+    "primary_ability": "Strength or Dexterity",
+    "saving_throw_proficiencies": ["Strength", "Constitution"],
+    "armor_proficiencies": ["All armor", "Shields"],
+    "weapon_proficiencies": ["Simple weapons", "Martial weapons"],
+    "skill_choices": {
+      "choose": 2,
+      "from": ["Acrobatics", "Animal Handling", "Athletics", "History", "Insight", "Intimidation", "Perception", "Survival"]
+    },
+    "class_features": [
+      {
+        "level": 1,
+        "name": "Fighting Style",
+        "description": "You adopt a particular style of fighting as your specialty."
+      },
+      {
+        "level": 1,
+        "name": "Second Wind",
+        "description": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level."
+      },
+      {
+        "level": 2,
+        "name": "Action Surge",
+        "description": "You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action."
+      }
+    ],
+    "is_homebrew": false
+  },
+  {
+    "source_abbreviation": "SRD",
+    "name": "Wizard",
+    "description": "A scholarly magic-user capable of manipulating the structures of reality.",
+    "hit_die": 6,
+    "primary_ability": "Intelligence",
+    "saving_throw_proficiencies": ["Intelligence", "Wisdom"],
+    "armor_proficiencies": [],
+    "weapon_proficiencies": ["Daggers", "Darts", "Slings", "Quarterstaffs", "Light crossbows"],
+    "skill_choices": {
+      "choose": 2,
+      "from": ["Arcana", "History", "Insight", "Investigation", "Medicine", "Religion"]
+    },
+    "spellcasting": {
+      "ability": "Intelligence",
+      "ritual_casting": true,
+      "spellcasting_focus": "arcane focus"
+    },
+    "class_features": [
+      {
+        "level": 1,
+        "name": "Spellcasting",
+        "description": "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power."
+      },
+      {
+        "level": 1,
+        "name": "Arcane Recovery",
+        "description": "Once per day when you finish a short rest, you can choose expended spell slots to recover."
+      },
+      {
+        "level": 2,
+        "name": "Arcane Tradition",
+        "description": "You choose an arcane tradition, shaping your practice of magic."
+      }
+    ],
+    "is_homebrew": false
+  },
+  {
+    "source_abbreviation": "SRD",
+    "name": "Cleric",
+    "description": "A priestly champion who wields divine magic in service of a higher power.",
+    "hit_die": 8,
+    "primary_ability": "Wisdom",
+    "saving_throw_proficiencies": ["Wisdom", "Charisma"],
+    "armor_proficiencies": ["Light armor", "Medium armor", "Shields"],
+    "weapon_proficiencies": ["Simple weapons"],
+    "skill_choices": {
+      "choose": 2,
+      "from": ["History", "Insight", "Medicine", "Persuasion", "Religion"]
+    },
+    "spellcasting": {
+      "ability": "Wisdom",
+      "ritual_casting": true,
+      "spellcasting_focus": "holy symbol"
+    },
+    "class_features": [
+      {
+        "level": 1,
+        "name": "Spellcasting",
+        "description": "As a conduit for divine power, you can cast cleric spells."
+      },
+      {
+        "level": 1,
+        "name": "Divine Domain",
+        "description": "Choose one domain related to your deity."
+      },
+      {
+        "level": 2,
+        "name": "Channel Divinity",
+        "description": "You gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects."
+      }
+    ],
+    "is_homebrew": false
+  },
+  {
+    "source_abbreviation": "SRD",
+    "name": "Rogue",
+    "description": "A scoundrel who uses stealth and trickery to overcome obstacles and enemies.",
+    "hit_die": 8,
+    "primary_ability": "Dexterity",
+    "saving_throw_proficiencies": ["Dexterity", "Intelligence"],
+    "armor_proficiencies": ["Light armor"],
+    "weapon_proficiencies": ["Simple weapons", "Hand crossbows", "Longswords", "Rapiers", "Shortswords"],
+    "tool_proficiencies": ["Thieves' tools"],
+    "skill_choices": {
+      "choose": 4,
+      "from": ["Acrobatics", "Athletics", "Deception", "Insight", "Intimidation", "Investigation", "Perception", "Performance", "Persuasion", "Sleight of Hand", "Stealth"]
+    },
+    "class_features": [
+      {
+        "level": 1,
+        "name": "Expertise",
+        "description": "Choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
+      },
+      {
+        "level": 1,
+        "name": "Sneak Attack",
+        "description": "You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll."
+      },
+      {
+        "level": 2,
+        "name": "Cunning Action",
+        "description": "You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+      }
+    ],
+    "is_homebrew": false
+  }
+]

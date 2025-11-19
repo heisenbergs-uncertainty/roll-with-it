@@ -1,0 +1,34 @@
+[
+  {
+    "ruleset_short_name": "5e",
+    "name": "System Reference Document 5.1",
+    "abbreviation": "SRD",
+    "description": "The official D&D 5e System Reference Document available under the OGL",
+    "publication_year": 2016,
+    "is_official": true
+  },
+  {
+    "ruleset_short_name": "5e",
+    "name": "Player's Handbook",
+    "abbreviation": "PHB",
+    "description": "The core rulebook for D&D 5th Edition players",
+    "publication_year": 2014,
+    "is_official": true
+  },
+  {
+    "ruleset_short_name": "5e",
+    "name": "Xanathar's Guide to Everything",
+    "abbreviation": "XGE",
+    "description": "Expanded character options and DM tools",
+    "publication_year": 2017,
+    "is_official": true
+  },
+  {
+    "ruleset_short_name": "5e",
+    "name": "Tasha's Cauldron of Everything",
+    "abbreviation": "TCE",
+    "description": "New character options, spells, and customization rules",
+    "publication_year": 2020,
+    "is_official": true
+  }
+]
