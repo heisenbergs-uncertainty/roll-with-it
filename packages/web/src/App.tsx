@@ -1,11 +1,20 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import { AuthProvider } from './contexts/AuthContext';
+import { ProtectedRoute } from './components/auth/ProtectedRoute';
+import { Navigation } from './components/layout/Navigation';
 import HomePage from './pages/HomePage';
 import CharactersPage from './pages/CharactersPage';
+import CharacterCreatePage from './pages/CharacterCreatePage';
+import CharacterDetailPage from './pages/CharacterDetailPage';
+import CharacterEditPage from './pages/CharacterEditPage';
 import CampaignsPage from './pages/CampaignsPage';
+import CampaignCreatePage from './pages/CampaignCreatePage';
+import CampaignDetailPage from './pages/CampaignDetailPage';
 import ContentPage from './pages/ContentPage';
 import LoginPage from './pages/LoginPage';
+import SignUpPage from './pages/SignUpPage';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -19,61 +28,86 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <div className="min-h-screen bg-gray-50">
-          <nav className="bg-white shadow-sm border-b border-gray-200">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex justify-between h-16">
-                <div className="flex space-x-8">
-                  <Link
-                    to="/"
-                    className="inline-flex items-center px-1 pt-1 text-lg font-semibold text-gray-900"
-                  >
-                    Roll With It
-                  </Link>
-                  <Link
-                    to="/characters"
-                    className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-700 hover:text-gray-900 hover:border-gray-300"
-                  >
-                    Characters
-                  </Link>
-                  <Link
-                    to="/campaigns"
-                    className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-700 hover:text-gray-900 hover:border-gray-300"
-                  >
-                    Campaigns
-                  </Link>
-                  <Link
-                    to="/content"
-                    className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-700 hover:text-gray-900 hover:border-gray-300"
-                  >
-                    Content Library
-                  </Link>
-                </div>
-                <div className="flex items-center">
-                  <Link
-                    to="/login"
-                    className="text-sm font-medium text-gray-700 hover:text-gray-900"
-                  >
-                    Sign In
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </nav>
+      <AuthProvider>
+        <BrowserRouter>
+          <div className="min-h-screen bg-gray-50">
+            <Navigation />
 
-          <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/characters" element={<CharactersPage />} />
-              <Route path="/campaigns" element={<CampaignsPage />} />
-              <Route path="/content" element={<ContentPage />} />
-              <Route path="/login" element={<LoginPage />} />
-            </Routes>
-          </main>
-        </div>
-      </BrowserRouter>
-      <ReactQueryDevtools initialIsOpen={false} />
+            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/signup" element={<SignUpPage />} />
+                <Route
+                  path="/characters"
+                  element={
+                    <ProtectedRoute>
+                      <CharactersPage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/characters/new"
+                  element={
+                    <ProtectedRoute>
+                      <CharacterCreatePage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/characters/:id"
+                  element={
+                    <ProtectedRoute>
+                      <CharacterDetailPage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/characters/:id/edit"
+                  element={
+                    <ProtectedRoute>
+                      <CharacterEditPage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/campaigns"
+                  element={
+                    <ProtectedRoute>
+                      <CampaignsPage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/campaigns/new"
+                  element={
+                    <ProtectedRoute>
+                      <CampaignCreatePage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/campaigns/:id"
+                  element={
+                    <ProtectedRoute>
+                      <CampaignDetailPage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/content"
+                  element={
+                    <ProtectedRoute>
+                      <ContentPage />
+                    </ProtectedRoute>
+                  }
+                />
+              </Routes>
+            </main>
+          </div>
+        </BrowserRouter>
+        <ReactQueryDevtools initialIsOpen={false} />
+      </AuthProvider>
     </QueryClientProvider>
   );
 }

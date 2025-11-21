@@ -1,0 +1,935 @@
+[
+  {
+    "name": "Club",
+    "type": "weapon",
+    "subtype": "simple melee",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A simple wooden club.",
+    "properties": {
+      "properties": ["Light"]
+    },
+    "damage": {
+      "dice": "1d4",
+      "type": "bludgeoning"
+    },
+    "weight": 2,
+    "cost": {
+      "amount": 1,
+      "currency": "sp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Dagger",
+    "type": "weapon",
+    "subtype": "simple melee",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A small blade useful for close combat.",
+    "properties": {
+      "properties": ["Finesse", "Light", "Thrown (20/60)"]
+    },
+    "damage": {
+      "dice": "1d4",
+      "type": "piercing"
+    },
+    "weight": 1,
+    "cost": {
+      "amount": 2,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Greataxe",
+    "type": "weapon",
+    "subtype": "martial melee",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A large, heavy axe requiring two hands.",
+    "properties": {
+      "properties": ["Heavy", "Two-handed"]
+    },
+    "damage": {
+      "dice": "1d12",
+      "type": "slashing"
+    },
+    "weight": 7,
+    "cost": {
+      "amount": 30,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Greatsword",
+    "type": "weapon",
+    "subtype": "martial melee",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A massive two-handed sword.",
+    "properties": {
+      "properties": ["Heavy", "Two-handed"]
+    },
+    "damage": {
+      "dice": "2d6",
+      "type": "slashing"
+    },
+    "weight": 6,
+    "cost": {
+      "amount": 50,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Handaxe",
+    "type": "weapon",
+    "subtype": "simple melee",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A light axe that can be thrown.",
+    "properties": {
+      "properties": ["Light", "Thrown (20/60)"]
+    },
+    "damage": {
+      "dice": "1d6",
+      "type": "slashing"
+    },
+    "weight": 2,
+    "cost": {
+      "amount": 5,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Javelin",
+    "type": "weapon",
+    "subtype": "simple melee",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A light spear designed for throwing.",
+    "properties": {
+      "properties": ["Thrown (30/120)"]
+    },
+    "damage": {
+      "dice": "1d6",
+      "type": "piercing"
+    },
+    "weight": 2,
+    "cost": {
+      "amount": 5,
+      "currency": "sp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Longsword",
+    "type": "weapon",
+    "subtype": "martial melee",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A versatile blade effective in one or two hands.",
+    "properties": {
+      "properties": ["Versatile (1d10)"],
+      "slot": "weapon"
+    },
+    "damage": {
+      "dice": "1d8",
+      "type": "slashing"
+    },
+    "weight": 3,
+    "cost": {
+      "amount": 15,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Mace",
+    "type": "weapon",
+    "subtype": "simple melee",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A heavy club with a metal head.",
+    "properties": {
+      "slot": "weapon"
+    },
+    "damage": {
+      "dice": "1d6",
+      "type": "bludgeoning"
+    },
+    "weight": 4,
+    "cost": {
+      "amount": 5,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Quarterstaff",
+    "type": "weapon",
+    "subtype": "simple melee",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A sturdy wooden staff.",
+    "properties": {
+      "properties": ["Versatile (1d8)"],
+      "slot": "weapon"
+    },
+    "damage": {
+      "dice": "1d6",
+      "type": "bludgeoning"
+    },
+    "weight": 4,
+    "cost": {
+      "amount": 2,
+      "currency": "sp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Rapier",
+    "type": "weapon",
+    "subtype": "martial melee",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A slender, precise thrusting blade.",
+    "properties": {
+      "properties": ["Finesse"],
+      "slot": "weapon"
+    },
+    "damage": {
+      "dice": "1d8",
+      "type": "piercing"
+    },
+    "weight": 2,
+    "cost": {
+      "amount": 25,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Scimitar",
+    "type": "weapon",
+    "subtype": "martial melee",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A curved blade effective in quick strikes.",
+    "properties": {
+      "properties": ["Finesse", "Light"],
+      "slot": "weapon"
+    },
+    "damage": {
+      "dice": "1d6",
+      "type": "slashing"
+    },
+    "weight": 3,
+    "cost": {
+      "amount": 25,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Shortsword",
+    "type": "weapon",
+    "subtype": "martial melee",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A short blade ideal for quick attacks.",
+    "properties": {
+      "properties": ["Finesse", "Light"],
+      "slot": "weapon"
+    },
+    "damage": {
+      "dice": "1d6",
+      "type": "piercing"
+    },
+    "weight": 2,
+    "cost": {
+      "amount": 10,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Spear",
+    "type": "weapon",
+    "subtype": "simple melee",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A pole weapon that can be thrown.",
+    "properties": {
+      "properties": ["Thrown (20/60)", "Versatile (1d8)"],
+      "slot": "weapon"
+    },
+    "damage": {
+      "dice": "1d6",
+      "type": "piercing"
+    },
+    "weight": 3,
+    "cost": {
+      "amount": 1,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Shortbow",
+    "type": "weapon",
+    "subtype": "simple ranged",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A compact bow for ranged combat.",
+    "properties": {
+      "properties": ["Ammunition (80/320)", "Two-handed"],
+      "slot": "weapon"
+    },
+    "damage": {
+      "dice": "1d6",
+      "type": "piercing"
+    },
+    "weight": 2,
+    "cost": {
+      "amount": 25,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Longbow",
+    "type": "weapon",
+    "subtype": "martial ranged",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A powerful bow with long range.",
+    "properties": {
+      "properties": ["Ammunition (150/600)", "Heavy", "Two-handed"],
+      "slot": "weapon"
+    },
+    "damage": {
+      "dice": "1d8",
+      "type": "piercing"
+    },
+    "weight": 2,
+    "cost": {
+      "amount": 50,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Light Crossbow",
+    "type": "weapon",
+    "subtype": "simple ranged",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A mechanical ranged weapon.",
+    "properties": {
+      "properties": ["Ammunition (80/320)", "Loading", "Two-handed"],
+      "slot": "weapon"
+    },
+    "damage": {
+      "dice": "1d8",
+      "type": "piercing"
+    },
+    "weight": 5,
+    "cost": {
+      "amount": 25,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Padded Armor",
+    "type": "armor",
+    "subtype": "light",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Quilted layers of cloth and batting.",
+    "properties": {
+      "properties": ["Light armor", "Stealth disadvantage"],
+      "slot": "body"
+    },
+    "armor_class": 11,
+    "weight": 8,
+    "cost": {
+      "amount": 5,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Leather Armor",
+    "type": "armor",
+    "subtype": "light",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Boiled leather breastplate and shoulder protectors.",
+    "properties": {
+      "properties": ["Light armor"],
+      "slot": "body"
+    },
+    "armor_class": 11,
+    "weight": 10,
+    "cost": {
+      "amount": 10,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Studded Leather Armor",
+    "type": "armor",
+    "subtype": "light",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Leather reinforced with close-set rivets or spikes.",
+    "properties": {
+      "properties": ["Light armor"],
+      "slot": "body"
+    },
+    "armor_class": 12,
+    "weight": 13,
+    "cost": {
+      "amount": 45,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Hide Armor",
+    "type": "armor",
+    "subtype": "medium",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Crude armor made from thick furs and pelts.",
+    "properties": {
+      "properties": ["Medium armor"],
+      "slot": "body"
+    },
+    "armor_class": 12,
+    "weight": 12,
+    "cost": {
+      "amount": 10,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Chain Shirt",
+    "type": "armor",
+    "subtype": "medium",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A shirt made of interlocking metal rings.",
+    "properties": {
+      "properties": ["Medium armor"],
+      "slot": "body"
+    },
+    "armor_class": 13,
+    "weight": 20,
+    "cost": {
+      "amount": 50,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Scale Mail",
+    "type": "armor",
+    "subtype": "medium",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Coat and leggings of overlapping metal pieces.",
+    "properties": {
+      "properties": ["Medium armor", "Stealth disadvantage"],
+      "slot": "body"
+    },
+    "armor_class": 14,
+    "weight": 45,
+    "cost": {
+      "amount": 50,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Breastplate",
+    "type": "armor",
+    "subtype": "medium",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Fitted metal chest piece worn with leather.",
+    "properties": {
+      "properties": ["Medium armor"],
+      "slot": "body"
+    },
+    "armor_class": 14,
+    "weight": 20,
+    "cost": {
+      "amount": 400,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Half Plate",
+    "type": "armor",
+    "subtype": "medium",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Shaped metal plates covering most of the body.",
+    "properties": {
+      "properties": ["Medium armor", "Stealth disadvantage"],
+      "slot": "body"
+    },
+    "armor_class": 15,
+    "weight": 40,
+    "cost": {
+      "amount": 750,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Ring Mail",
+    "type": "armor",
+    "subtype": "heavy",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Leather armor with heavy rings sewn in.",
+    "properties": {
+      "properties": ["Heavy armor", "Stealth disadvantage"],
+      "slot": "body"
+    },
+    "armor_class": 14,
+    "weight": 40,
+    "cost": {
+      "amount": 30,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Chain Mail",
+    "type": "armor",
+    "subtype": "heavy",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Interlocking metal rings covering the entire body.",
+    "properties": {
+      "properties": ["Heavy armor", "Stealth disadvantage", "STR 13"],
+      "slot": "body"
+    },
+    "armor_class": 16,
+    "weight": 55,
+    "cost": {
+      "amount": 75,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Splint Armor",
+    "type": "armor",
+    "subtype": "heavy",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Narrow vertical metal strips riveted to leather backing.",
+    "properties": {
+      "properties": ["Heavy armor", "Stealth disadvantage", "STR 15"],
+      "slot": "body"
+    },
+    "armor_class": 17,
+    "weight": 60,
+    "cost": {
+      "amount": 200,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Plate Armor",
+    "type": "armor",
+    "subtype": "heavy",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Interlocking metal plates covering the entire body.",
+    "properties": {
+      "properties": ["Heavy armor", "Stealth disadvantage", "STR 15"],
+      "slot": "body"
+    },
+    "armor_class": 18,
+    "weight": 65,
+    "cost": {
+      "amount": 1500,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Shield",
+    "type": "armor",
+    "subtype": "shield",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Increases your armor class by 2.",
+    "properties": {
+      "properties": ["+2 AC"],
+      "slot": "shield"
+    },
+    "armor_class": 2,
+    "weight": 6,
+    "cost": {
+      "amount": 10,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Backpack",
+    "type": "gear",
+    "subtype": "container",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A leather pack with multiple pockets.",
+    "weight": 5,
+    "cost": {
+      "amount": 2,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Bedroll",
+    "type": "gear",
+    "subtype": "camping",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Cloth bedding for sleeping outdoors.",
+    "weight": 7,
+    "cost": {
+      "amount": 1,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Rope, Hempen (50 feet)",
+    "type": "gear",
+    "subtype": "utility",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Strong rope made from hemp fibers.",
+    "weight": 10,
+    "cost": {
+      "amount": 1,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Rope, Silk (50 feet)",
+    "type": "gear",
+    "subtype": "utility",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Lightweight but strong silk rope.",
+    "weight": 5,
+    "cost": {
+      "amount": 10,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Torch",
+    "type": "gear",
+    "subtype": "light",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Provides bright light in 20-foot radius for 1 hour.",
+    "weight": 1,
+    "cost": {
+      "amount": 1,
+      "currency": "cp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Waterskin",
+    "type": "gear",
+    "subtype": "container",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Leather container holding about 4 pints of liquid.",
+    "weight": 5,
+    "cost": {
+      "amount": 2,
+      "currency": "sp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Lantern, Hooded",
+    "type": "gear",
+    "subtype": "light",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Provides bright light in 30-foot radius for 6 hours per pint of oil.",
+    "weight": 2,
+    "cost": {
+      "amount": 5,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Arrows (20)",
+    "type": "gear",
+    "subtype": "ammunition",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Bundle of 20 arrows for use with bows.",
+    "weight": 1,
+    "cost": {
+      "amount": 1,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Crossbow Bolts (20)",
+    "type": "gear",
+    "subtype": "ammunition",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Bundle of 20 bolts for use with crossbows.",
+    "weight": 1.5,
+    "cost": {
+      "amount": 1,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Crowbar",
+    "type": "tool",
+    "subtype": "utility",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Grants advantage on Strength checks for prying things open.",
+    "weight": 5,
+    "cost": {
+      "amount": 2,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Hammer",
+    "type": "tool",
+    "subtype": "utility",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "A basic tool for construction and demolition.",
+    "weight": 3,
+    "cost": {
+      "amount": 1,
+      "currency": "gp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Rations (1 day)",
+    "type": "consumable",
+    "subtype": "food",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Dried foods suitable for extended travel.",
+    "weight": 2,
+    "cost": {
+      "amount": 5,
+      "currency": "sp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Oil (flask)",
+    "type": "consumable",
+    "subtype": "utility",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Flask of oil for lanterns or as a weapon.",
+    "weight": 1,
+    "cost": {
+      "amount": 1,
+      "currency": "sp"
+    },
+    "magical": false
+  },
+  {
+    "name": "Potion of Healing",
+    "type": "consumable",
+    "subtype": "potion",
+    "rarity": "common",
+    "requires_attunement": false,
+    "description": "Restores 2d4+2 hit points when consumed.",
+    "weight": 0.5,
+    "cost": {
+      "amount": 50,
+      "currency": "gp"
+    },
+    "magical": true
+  },
+  {
+    "name": "Potion of Greater Healing",
+    "type": "consumable",
+    "subtype": "potion",
+    "rarity": "uncommon",
+    "requires_attunement": false,
+    "description": "Restores 4d4+4 hit points when consumed.",
+    "weight": 0.5,
+    "cost": {
+      "amount": 150,
+      "currency": "gp"
+    },
+    "magical": true
+  },
+  {
+    "name": "+1 Longsword",
+    "type": "weapon",
+    "subtype": "martial melee",
+    "rarity": "uncommon",
+    "requires_attunement": false,
+    "description": "You have a +1 bonus to attack and damage rolls made with this magic weapon.",
+    "properties": {
+      "properties": ["Versatile (1d10)"],
+      "slot": "weapon",
+      "bonus": {
+        "attack": 1,
+        "damage": 1
+      }
+    },
+    "damage": {
+      "dice": "1d8+1",
+      "type": "slashing"
+    },
+    "weight": 3,
+    "cost": {
+      "amount": 500,
+      "currency": "gp"
+    },
+    "magical": true
+  },
+  {
+    "name": "+1 Shield",
+    "type": "armor",
+    "subtype": "shield",
+    "rarity": "uncommon",
+    "requires_attunement": false,
+    "description": "While holding this shield, you have a +3 bonus to AC (includes the shield's normal bonus).",
+    "properties": {
+      "slot": "shield",
+      "bonus": {
+        "ac": 3
+      }
+    },
+    "armor_class": null,
+    "weight": 6,
+    "cost": {
+      "amount": 500,
+      "currency": "gp"
+    },
+    "magical": true
+  },
+  {
+    "name": "Cloak of Protection",
+    "type": "gear",
+    "subtype": "wondrous",
+    "rarity": "uncommon",
+    "requires_attunement": true,
+    "description": "You gain a +1 bonus to AC and saving throws while you wear this cloak.",
+    "properties": {
+      "slot": "back",
+      "bonus": {
+        "ac": 1
+      }
+    },
+    "weight": 1,
+    "cost": {
+      "amount": 1000,
+      "currency": "gp"
+    },
+    "magical": true
+  },
+  {
+    "name": "Ring of Protection",
+    "type": "gear",
+    "subtype": "wondrous",
+    "rarity": "rare",
+    "requires_attunement": true,
+    "description": "You gain a +1 bonus to AC and saving throws while wearing this ring.",
+    "properties": {
+      "slot": "ring",
+      "bonus": {
+        "ac": 1
+      }
+    },
+    "weight": 0,
+    "cost": {
+      "amount": 2000,
+      "currency": "gp"
+    },
+    "magical": true
+  },
+  {
+    "name": "Gauntlets of Ogre Power",
+    "type": "gear",
+    "subtype": "wondrous",
+    "rarity": "uncommon",
+    "requires_attunement": true,
+    "description": "Your Strength score is 19 while you wear these gauntlets. They have no effect if your Strength is already 19 or higher.",
+    "properties": {
+      "slot": "hands",
+      "bonus": {
+        "abilityScores": {
+          "str": 19
+        }
+      }
+    },
+    "weight": 2,
+    "cost": {
+      "amount": 2000,
+      "currency": "gp"
+    },
+    "magical": true
+  },
+  {
+    "name": "Headband of Intellect",
+    "type": "gear",
+    "subtype": "wondrous",
+    "rarity": "uncommon",
+    "requires_attunement": true,
+    "description": "Your Intelligence score is 19 while you wear this headband. It has no effect if your Intelligence is already 19 or higher.",
+    "properties": {
+      "slot": "head",
+      "bonus": {
+        "abilityScores": {
+          "int": 19
+        }
+      }
+    },
+    "weight": 0,
+    "cost": {
+      "amount": 2000,
+      "currency": "gp"
+    },
+    "magical": true
+  }
+]
