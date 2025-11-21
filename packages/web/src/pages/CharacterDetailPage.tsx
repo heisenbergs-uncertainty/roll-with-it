@@ -12,8 +12,12 @@ import { EncumbranceTracker } from '@/components/character/EncumbranceTracker';
 import { EquipmentSlots } from '@/components/character/EquipmentSlots';
 import { SpellSlotTracker } from '@/components/character/SpellSlotTracker';
 import { SpellList } from '@/components/character/SpellList';
+import { DiceRoller } from '@/components/dice/DiceRoller';
+import { QuickRollButtons } from '@/components/dice/QuickRollButtons';
+import { RollHistory } from '@/components/dice/RollHistory';
 import { Button } from '@/components/common/Button';
 import { ArrowLeft, Edit, Trash2 } from 'lucide-react';
+import { getProficiencyBonus } from '@/utils/dice';
 
 export default function CharacterDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -32,6 +36,14 @@ export default function CharacterDetailPage() {
         total: (slots as { current: number; max: number }).max,
         used: (slots as { current: number; max: number }).max - (slots as { current: number; max: number }).current,
       }))
+    : [];
+
+  // Get proficiency bonus and skill proficiencies
+  const proficiencyBonus = character ? getProficiencyBonus(character.level) : 0;
+  const skillProficiencies = character?.skills
+    ? Object.entries(character.skills)
+        .filter(([_, proficient]) => proficient)
+        .map(([skill, _]) => skill)
     : [];
 
   const handleDelete = async () => {
@@ -133,6 +145,22 @@ export default function CharacterDetailPage() {
             abilityScores={character.ability_scores}
             level={character.level}
           />
+        </div>
+      </div>
+
+      {/* Dice Rolling Section */}
+      <div className="mt-6">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dice Rolling</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="space-y-6">
+            <DiceRoller />
+            <QuickRollButtons
+              abilityScores={character.ability_scores}
+              proficiencyBonus={proficiencyBonus}
+              skillProficiencies={skillProficiencies}
+            />
+          </div>
+          <RollHistory limit={10} />
         </div>
       </div>
 
